@@ -1,0 +1,86 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Gemini Clone</title>
+  </head>
+  <body>
+    <header class="header">
+      <h2 class="title">Hello, there</h2>
+      <h4 class="subtitle">How can I help you today?</h4>
+      <ul class="suggestion-list">
+        <li class="suggestion">
+          <h4 class="text">
+            Help me plan a game night with my 5 best friends for under $100
+          </h4>
+          <span class="icon material-symbols-outlined"> draw </span>
+        </li>
+        <li class="suggestion">
+          <h4 class="text">
+            What are the best tips to improve my public speaking skills?
+          </h4>
+          <span class="icon material-symbols-outlined"> lightbulb </span>
+        </li>
+        <li class="suggestion">
+          <h4 class="text">
+            Can you help me to find the latest news on the web development?
+          </h4>
+          <span class="icon material-symbols-outlined"> explore </span>
+        </li>
+        <li class="suggestion">
+          <h4 class="text">
+            Write Javascript code to sum all elements in an array?
+          </h4>
+          <div>
+            <span class="icon material-symbols-outlined"> code </span>
+          </div>
+        </li>
+      </ul>
+    </header>
+
+    <div class="chat-list">
+      <!-- Chat messages will be appended here -->
+    </div>
+
+    <div class="typing-area">
+      <form action="#" class="typing-form">
+        <div class="input-wrapper">
+          <input
+            type="text"
+            class="typing-input"
+            placeholder="Enter prompt here..."
+            required />
+          <button class="icon material-symbols-outlined">send</button>
+        </div>
+        <div class="action-buttons">
+          <span
+            id="toggle-theme-button"
+            style="cursor: pointer; padding-left: 0 !important"
+            class="icon material-symbols-outlined"
+            >light_mode</span
+          >
+          <span
+            id="delete-chat-button"
+            style="cursor: pointer; padding-left: 0 !important"
+            class="icon material-symbols-outlined"
+            >delete</span
+          >
+        </div>
+      </form>
+      <p class="disclaimer-text">
+        Gemini may display inaccurate info, including about people, so double
+        check its response.
+      </p>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
